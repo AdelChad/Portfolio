@@ -1,0 +1,10 @@
+@font-face {
+    font-family: policeLoL;
+    src: url('../police/Friz Quadrata Std Medium.otf');
+}
+
+body, html {
+    margin: 0;
+    background-color: #01060D;
+    overflow: hidden !important;
+}
