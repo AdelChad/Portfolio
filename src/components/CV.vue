@@ -1,7 +1,8 @@
 <template>
   <div class="container">
-    <button class="previous"  onclick="history.back()"> &lt; </button>
-    <div style="margin-top: 0.2vh; width:71vh;">
+    <button class="previous_cv"  onclick="history.back()"> &lt; </button>
+    <img src="../assets/experiences/brume.png" class="background_cv"/>
+    <div style="width:65vh; margin-top:2vh;">
       <zoom-on-hover :img-normal="require('../assets/CV/CV_Chadli_Adel.png')"></zoom-on-hover>
     </div>
 
@@ -25,6 +26,20 @@ export default {
 </script>
 
 <style lang="scss">
+
+.background_cv{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url("../assets/experiences/brume.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
 .container {
     width: 100%;
     height: 100%;
@@ -40,13 +55,11 @@ export default {
     }
 }
 
-.previous {
-    position:absolute;
-    top:5vh;
-    left:3vw;
-    font-family: 'Marcellus SC', serif;
-    font-size: 15px;
-    font-weight: bold;
+.previous_cv {
+  position:relative;
+  top:-40vh;
+  left:-30vw;
+  font-family: 'Marcellus SC', serif;
 }
 
 .button{

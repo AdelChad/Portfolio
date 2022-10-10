@@ -3,8 +3,19 @@
     src: url('../police/Friz Quadrata Std Medium.otf');
 }
 
-body, html {
-    margin: 0;
-    background-color: #01060D;
-    overflow: hidden !important;
+@keyframes rotation {
+    from {
+      transform:translate(-50%, -50%) rotate(0deg) ;
+    }
+    to {
+      transform:translate(-50%, -50%) rotate(359deg) ;
+    }
+}
+html {
+  background-color: #01060D;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
 }

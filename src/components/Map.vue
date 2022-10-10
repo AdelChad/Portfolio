@@ -7,9 +7,9 @@
                 <img class="role" 
                 @mouseover="showText = 1"
                 @mouseleave="showText = 0" 
-                v-on:click="goLoisir"
+                v-on:click="goProjet"
                 src="../assets/roles/Adc_bordered_white.png"/>
-                <span class="text" v-if="showText === 1">Loisirs</span>
+                <span class="text" v-if="showText === 1">Projets</span>
             </div>
 
             <div class="supp">
@@ -27,7 +27,7 @@
                 @mouseleave="showText = 0"  
                 v-on:click="goService"
                 src="../assets/roles/Jgl_bordered_white.png" >
-                <span class="text" v-if="showText === 3">Service disponible</span>
+                <span class="text" v-if="showText === 3">Services disponible</span>
             </div>
 
             <div class="mid">
@@ -67,8 +67,8 @@ export default {
     },
 
     methods: {
-        goLoisir: function() {
-            this.$router.push({name: "Loisir"})
+        goProjet: function() {
+            this.$router.push({name: "Projets"})
         },
         goContacte: function() {
             this.$router.push({name: "Contacte"})
@@ -97,6 +97,7 @@ export default {
 }
 
 .welcome{
+    margin-top: 3vh;
     color: white;
     font-family: policeLoL;
     text-align: center;
@@ -120,21 +121,21 @@ export default {
 }
 .jgl{
     position: absolute;
-    left : 41vw;
+    left : 40vw;
     width: 18%;
-    top:40vh;
+    top:36vh;
 }
 .mid{
     position: absolute;
-    left : 50vw;
+    left : 49vw;
     width: 18%;
-    top:35vh;
+    top:33vh;
 }
 .top{
     position: absolute;
-    left : 39vw;
+    left : 38vw;
     width: 18%;
-    top:18vh;
+    top:15vh;
 }
 
 .text{

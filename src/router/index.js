@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import Map from "../components/Map.vue"
-import Loisir from "../components/Loisir.vue"
+import Projets from "../components/Projets.vue"
 import Contact from "../components/Contact.vue"
 import Service from "../components/Service.vue"
 import Experience from "../components/Experience.vue"
@@ -17,9 +17,9 @@ const routes = [
         component: Map,
     },
     {
-        path: "/loisir",
-        name: "Loisir",
-        component: Loisir,
+        path: "/projets",
+        name: "Projets",
+        component: Projets,
     },
     {
         path: "/contact",
